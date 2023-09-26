@@ -30,7 +30,7 @@ function TasksList() {
           <td>Mark</td>
           <td>Otto</td>
           <td>
-             <Button variant="primary" className='mx-3' onClick={()=>UpdateTask()}><i className="bi bi-pencil-square"></i></Button>
+             <Button variant="primary" className='mx-3 my-1'  onClick={()=>UpdateTask()}><i className="bi bi-pencil-square"></i></Button>
              <Button variant="primary" onClick={()=>DeleteTask()}><i className="bi bi-trash3-fill"></i></Button>
           </td>
         </tr>
