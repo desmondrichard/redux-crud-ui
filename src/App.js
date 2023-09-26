@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import Container from 'react-bootstrap/Container';
 import './App.css';
+import Navbar from './components/Navbar';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import AddTask from './components/AddTask';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import TasksList from './components/TasksList';
+import UpdateTask from './components/UpdateTask';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Row className="justify-content-md-center">
+          <Col md="8">
+            <Navbar />
+          </Col>
+          <Col md="6" className="mb-3">
+            <AddTask />
+          </Col>
+          <Col md="6">
+            <TasksList />
+          </Col>
+        </Row>
+        <UpdateTask />
+      </Container>
+
+
     </div>
   );
 }
