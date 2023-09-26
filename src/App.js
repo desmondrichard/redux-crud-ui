@@ -17,10 +17,10 @@ function App() {
           <Col md="8">
             <Navbar />
           </Col>
-          <Col md="7" className="mb-3">
+          <Col md="8" className="mb-3">
             <AddTask />
           </Col>
-          <Col md="7">
+          <Col md="8">
             <TasksList />
           </Col>
         </Row>
